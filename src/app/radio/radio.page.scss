@@ -1,0 +1,10 @@
+// Menggunakan media query untuk layar yang lebih besar
+@media (min-width: 768px) {
+  .container {
+    // Membatasi lebar maksimum untuk konten
+    max-width: 650px; 
+    // Memposisikan konten di tengah layar
+    margin: 0 auto; 
+    padding-top: 20px;
+  }
+}

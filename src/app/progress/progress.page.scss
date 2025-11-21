@@ -1,0 +1,23 @@
+// Menggunakan media query untuk layar yang lebih besar
+@media (min-width: 768px) {
+  .container {
+    // Membatasi lebar maksimum untuk konten
+    max-width: 650px; 
+    // Memposisikan konten di tengah layar
+    margin: 0 auto; 
+    padding-top: 20px;
+  }
+}
+
+// Menyesuaikan tampilan ion-item yang berisi progress bar agar rapi
+ion-item {
+    // Memastikan item tidak memiliki batas (lines="none")
+    --border-width: 0 !important; 
+    --inner-border-width: 0 !important;
+}
+
+// Mengatur tampilan progress bar di dalam ion-item
+ion-progress-bar {
+    width: 60%; /* Beri sedikit ruang jika label ada di samping */
+    margin-left: 10px;
+}

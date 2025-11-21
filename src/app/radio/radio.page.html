@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Radio & Checkbox</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+    <div class="container">
+        <h1>Radio Components</h1>
+        <p>Penggunaan <code>&lt;ion-radio-group&gt;</code> (Pilihan Tunggal).</p>
+
+        <ion-list class="ion-no-border">
+            <ion-radio-group value="option1">
+                <ion-item>
+                    <ion-radio value="option1" color="primary">Opsi 1</ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-radio value="option2" color="secondary">Opsi 2</ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-radio value="option3" color="success" disabled="true">Opsi 3 (Disabled)</ion-radio>
+                </ion-item>
+            </ion-radio-group>
+        </ion-list>
+
+        <h1 class="ion-padding-top">Checkbox Components</h1>
+        <p>Penggunaan <code>&lt;ion-checkbox&gt;</code> (Pilihan Ganda).</p>
+
+        <ion-list class="ion-no-border">
+            <ion-item>
+                <ion-checkbox slot="start" color="primary" label-placement="end">Setuju dengan Syarat & Ketentuan</ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-checkbox slot="start" color="warning" [checked]="true" label-placement="end">Langganan Newsletter</ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-checkbox slot="start" color="danger" [disabled]="true" label-placement="end">Opsi Tidak Tersedia</ion-checkbox>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

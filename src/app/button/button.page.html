@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Button Components</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+    <div class="container"> 
+        <h2>Contoh Button Sederhana</h2>
+        <ion-button color="primary" expand="block" (click)="onButtonClick()">
+            Klik Saya!
+        </ion-button>
+        <p>Button sudah diklik: <strong>{{ clickCount }}</strong> kali</p>
+
+        <h3>Semua Warna Button:</h3>
+        <div class="button-group"> 
+            <ion-button color="primary">Primary</ion-button>
+            <ion-button color="secondary">Secondary</ion-button>
+            <ion-button color="success">Success</ion-button>
+            <ion-button color="warning">Warning</ion-button>
+            <ion-button color="danger">Danger</ion-button>
+            <ion-button color="light">Light</ion-button>
+            <ion-button color="medium">Medium</ion-button>
+            <ion-button color="dark">Dark</ion-button>
+        </div>
+        
+        <h3>Button dengan Size:</h3>
+        <div class="button-group">
+            <ion-button size="small" color="primary">Small</ion-button>
+            <ion-button size="default" color="primary">Default</ion-button>
+            <ion-button size="large" color="primary">Large</ion-button>
+        </div>
+        
+        <h3>Button dengan Style:</h3>
+        <div class="button-group">
+            <ion-button fill="solid" color="primary">Solid</ion-button>
+            <ion-button fill="outline" color="primary">Outline</ion-button>
+            <ion-button fill="clear" color="primary">Clear</ion-button>
+        </div>
+
+        <h3>Button Disabled:</h3>
+        <div class="button-group">
+            <ion-button color="primary" disabled>Disabled Primary</ion-button>
+            <ion-button color="success" disabled>Disabled Success</ion-button>
+        </div>
+    </div>
+</ion-content>

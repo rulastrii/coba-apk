@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Input Components</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+    <div class="container">
+        <h1>Input Components</h1>
+        <p>Contoh penggunaan dasar dari <code>&lt;ion-input&gt;</code> dan <code>&lt;ion-textarea&gt;</code>.</p>
+
+        <ion-list lines="full" class="ion-no-border"> 
+            <ion-item>
+                <ion-input label="Input Default" placeholder="Masukkan teks"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input label="Input Teks" label-placement="floating" type="text" placeholder="Masukkan nama"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input label="Input Password" label-placement="stacked" type="password" placeholder="Masukkan password"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input label="Input Angka" label-placement="fixed" type="number" placeholder="Masukkan angka"></ion-input>
+            </ion-item>
+            
+            <ion-item>
+                <ion-input label="Input Email" type="email" placeholder="contoh@domain.com" helperText="Gunakan format email yang benar."></ion-input>
+            </ion-item>
+
+            <ion-item counter="true">
+                <ion-textarea label="Textarea" placeholder="Tulis komentar Anda" maxlength="200"></ion-textarea>
+            </ion-item>
+        </ion-list>
+
+        <ion-button expand="block" class="ion-margin-top">Submit</ion-button>
+    </div>
+</ion-content>

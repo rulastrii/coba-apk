@@ -1,0 +1,21 @@
+// Mengatur tata letak untuk grup tombol
+.button-group {
+    // Menggunakan flexbox untuk memposisikan tombol secara horizontal
+    display: flex;
+    // Memungkinkan tombol untuk pindah ke baris baru jika ruang tidak cukup
+    flex-wrap: wrap; 
+    // Jarak antar elemen
+    gap: 8px; 
+    margin-bottom: 20px;
+}
+
+// Menggunakan media query untuk layar yang lebih besar (desktop/tablet)
+@media (min-width: 768px) {
+  .container {
+    // Membatasi lebar maksimum untuk konten
+    max-width: 700px; 
+    // Memposisikan konten di tengah layar
+    margin: 0 auto; 
+    padding-top: 20px;
+  }
+}

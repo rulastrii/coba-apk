@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Progress Components</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+    <div class="container">
+        <h1>Progress Bar Sederhana</h1>
+        <p>Nilai progres statis (0.5 atau 50%)</p>
+        <ion-progress-bar value="0.5"></ion-progress-bar>
+
+        <h1 class="ion-padding-top">Progress Bar Berwarna</h1>
+        <p>Progress bar dengan warna berbeda dan nilai yang bervariasi.</p>
+        
+        <ion-item lines="none">
+            <ion-label>Primary (25%)</ion-label>
+            <ion-progress-bar value="0.25" color="primary"></ion-progress-bar>
+        </ion-item>
+        
+        <ion-item lines="none">
+            <ion-label>Success (75%)</ion-label>
+            <ion-progress-bar value="0.75" color="success"></ion-progress-bar>
+        </ion-item>
+        
+        <ion-item lines="none">
+            <ion-label>Danger (100%)</ion-label>
+            <ion-progress-bar value="1.0" color="danger"></ion-progress-bar>
+        </ion-item>
+
+        <h1 class="ion-padding-top">Progress Bar Indeterminate (Loading)</h1>
+        <p>Gunakan <code>type="indeterminate"</code> untuk status loading.</p>
+        <ion-progress-bar type="indeterminate" color="warning"></ion-progress-bar>
+
+        <h1 class="ion-padding-top">Progress Bar Dinamis</h1>
+        <p>Nilai: <strong>{{ progressValue | percent }}</strong></p>
+        <ion-progress-bar [value]="progressValue" color="secondary" reversed></ion-progress-bar>
+    </div>
+</ion-content>

@@ -1,31 +1,32 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Aplikasi APK Simple</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            Ionic UI Components
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true" class="ion-padding">
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Status Aplikasi Ionic</ion-card-title>
-      <ion-card-subtitle>Proyek Pertama Anda</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
-      <p style="font-size: 1.1em; font-weight: bold; color: var(--ion-color-primary);">{{ pesanStatus }}</p>
-      
-      <p>Tekan tombol di bawah untuk mengubah status.</p>
-      
-      <ion-button 
-        expand="block" 
-        (click)="ubahStatus()"
-        color="success"
-      >
-        <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
-        Ubah Status (Simulasi Interaksi)
-      </ion-button>
-    </ion-card-content>
-  </ion-card>
-  
-  </ion-content>
+    <div class="container">
+        <h1>Selamat Datang!</h1>
+        <p>Tutorial Ionic UI Components Dasar</p>
+        
+        <ion-list lines="full" class="ion-no-border"> 
+            <ion-item button [routerLink]="['/button']">
+                <ion-icon name="square" slot="start" color="primary"></ion-icon>
+                <ion-label>Button Components</ion-label>
+            </ion-item>
+            <ion-item button [routerLink]="['/inputs']">
+                <ion-icon name="text" slot="start" color="secondary"></ion-icon>
+                <ion-label>Input Components</ion-label>
+            </ion-item>
+            <ion-item button [routerLink]="['/radio']">
+                <ion-icon name="radio-button-on" slot="start" color="success"></ion-icon>
+                <ion-label>Radio & Checkbox</ion-label>
+            </ion-item>
+            <ion-item button [routerLink]="['/progress']">
+                <ion-icon name="hourglass" slot="start" color="warning"></ion-icon>
+                <ion-label>Progress Components</ion-label>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

@@ -1,21 +1,38 @@
+// src/app/home/home.page.ts
 import { Component } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import {
+  IonContent,
+  IonHeader,
+  IonTitle,
+  IonToolbar,
+  IonList,
+  IonItem,
+  IonLabel,
+  IonIcon
+} from '@ionic/angular/standalone';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  styleUrls: ['home.page.scss'], // Pastikan ini menunjuk ke file SCSS di atas
   standalone: true,
-  imports: [IonicModule],
+  imports: [
+    IonContent,
+    IonHeader,
+    IonTitle,
+    IonToolbar,
+    IonList,
+    IonItem,
+    IonLabel,
+    IonIcon,
+    CommonModule,
+    FormsModule,
+    RouterModule
+  ]
 })
 export class HomePage {
-  // 1. Tambahkan variabel pesan
-  pesanStatus: string = 'Aplikasi siap diuji!';
-  
   constructor() {}
-
-  // 2. Tambahkan fungsi untuk mengubah pesan
-  ubahStatus() {
-    this.pesanStatus = 'Status berhasil diubah, APK siap dibagikan!';
-  }
 }

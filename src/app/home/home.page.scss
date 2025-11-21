@@ -25,3 +25,14 @@
 #container a {
   text-decoration: none;
 }
+
+// Menggunakan media query untuk layar yang lebih besar
+@media (min-width: 768px) {
+  .container {
+    // Membatasi lebar maksimum untuk konten di layar besar (misalnya, tablet ke atas)
+    max-width: 600px; 
+    // Memposisikan konten di tengah layar
+    margin: 0 auto; 
+    padding-top: 20px;
+  }
+}
