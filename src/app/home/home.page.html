@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Aplikasi APK Simple</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Status Aplikasi Ionic</ion-card-title>
+      <ion-card-subtitle>Proyek Pertama Anda</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p style="font-size: 1.1em; font-weight: bold; color: var(--ion-color-primary);">{{ pesanStatus }}</p>
+      
+      <p>Tekan tombol di bawah untuk mengubah status.</p>
+      
+      <ion-button 
+        expand="block" 
+        (click)="ubahStatus()"
+        color="success"
+      >
+        <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+        Ubah Status (Simulasi Interaksi)
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+  </ion-content>
